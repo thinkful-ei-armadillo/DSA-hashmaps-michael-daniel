@@ -114,6 +114,7 @@ const index = hash % capacity; // 3
 
 ## Dealing with collisions (separate chaining)
 
+separate chaining is more scalable
 use a **linked list** at index to point to the other key value
 
 
