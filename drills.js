@@ -105,19 +105,22 @@ let mapAnswer2 = [
 // 4. Remove duplicates
 
 function removeDupes(str) {
-  let resultMap = new HashMap;
+  let resultMap = new HashMap();
   let arr = str.split('');
-  let result = [];
-  
+  let result = new HashMap();
+  let final = new Map();
+
   for (let i = 0; i < arr.length; i++) {
-    resultMap.set(arr[i], arr[i]);
+    resultMap.set(arr[i], i);
+    
   }
   console.log(resultMap);
   for (let k = 0; k < resultMap.length; k++) {
-    if (resultMap[k].key !== null) {
-      console.log('triggered!');
-      result.push(resultMap[k].key);
-    }
+    // if (resultMap.get!== null) {
+    //   console.log('triggered!');
+    //   result.push(resultMap.get[k]);
+    // }
+    result.set(resultMap.get(k), k);
   }
   return result;
 }
