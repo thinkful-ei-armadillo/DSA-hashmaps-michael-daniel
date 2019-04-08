@@ -331,5 +331,5 @@ lorChained.set('LadyOfLight', 'Galadriel');
 lorChained.set('HalfElven', 'Arwen');
 lorChained.set('Ent', 'Treebeard');
 
-console.log(JSON.stringify(lorChained.get('Hobbit'), null, 2));
-// console.log(lorChained._hashTable[1]);
+console.log(JSON.stringify(lorChained, null, 2));
+console.log(lorChained);
